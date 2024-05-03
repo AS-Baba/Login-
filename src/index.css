@@ -1,0 +1,81 @@
+.brandLogo {
+  width: 30px;
+  height: 30px;
+}
+
+.sideImage {
+  /* background-color: black; */
+}
+.sideImage {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/background.svg");
+  background-size: 100%;
+}
+
+.dontHaveAnAccount {
+  font-size: 15px;
+  color: #8a8b8dff;
+}
+
+.signUp {
+  font-weight: 550;
+  color: #6d60f6ff;
+}
+
+.form-label,
+.loginHead {
+  color: #140e38ff;
+}
+.form-label {
+  font-weight: 450;
+}
+
+form .login-btn {
+  height: 60px;
+  font-weight: 600;
+  background-color: #6d60f6ff;
+  color: #ffffff;
+}
+form .login-btn:hover {
+  height: 60px;
+  background-color: #140e38ff;
+  color: #6d60f6ff;
+}
+
+form .login-btn-option {
+  font-weight: 800;
+  height: 60px;
+  color: #140e38ff;
+  border: 1px solid #6d60f6ff;
+}
+form .login-btn-option:hover  {
+  font-weight: 800;
+  height: 60px;
+  background-color: #6d60f6ff;
+  color: #ffffff;
+}
+
+.tiny-line {
+  border-top: 2px solid #f0f0f0ff;
+  border-radius: 20px;
+  margin: auto;
+
+  margin-top: 3rem;
+  width: 250px;
+  margin-bottom: 30px;
+}
+.tiny-line-text {
+  margin-top: 2.2rem;
+  color: #646566;
+}
+
+.icons{
+  font-size: 1.5rem;
+}
+.facebook{
+  color:#6d60f6ff ;
+}
+form .login-btn-option:hover .facebook{
+  color: #140e38ff;
+}
