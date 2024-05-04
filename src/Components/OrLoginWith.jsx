@@ -2,10 +2,10 @@ import React from 'react'
 
 export const OrLoginWith = () => {
   return (
-    <div className='d-flex justify-content-between'>
-        <div className='tiny-line'></div>
-        <div className='tiny-line-text'>or login with</div>
-        <div className='tiny-line'></div>
+    <div className=' container-flui d-flex justify-content-between'>
+        <div className='col tiny-line'></div>
+        <div className='col container text-center tiny-line-text'>or login with</div>
+        <div className='col tiny-line'></div>
 
     </div>
   )

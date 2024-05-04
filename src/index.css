@@ -1,16 +1,22 @@
+.navContainer {
+  border-bottom: 1px solid #f0f0f0ff;
+}
+
 .brandLogo {
   width: 30px;
   height: 30px;
 }
 
-.sideImage {
-  /* background-color: black; */
+div.form-container {
+  padding: 0 100px;
 }
+
 .sideImage {
-  width: 100%;
   height: 100vh;
-  background-image: url("./assets/background.svg");
-  background-size: 100%;
+  background-image: url("./assets/g60298.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .dontHaveAnAccount {
@@ -21,37 +27,40 @@
 .signUp {
   font-weight: 550;
   color: #6d60f6ff;
+  cursor: pointer;
 }
 
 .form-label,
 .loginHead {
   color: #140e38ff;
 }
+
 .form-label {
   font-weight: 450;
 }
 
 form .login-btn {
-  height: 60px;
+  height: 40px;
   font-weight: 600;
   background-color: #6d60f6ff;
   color: #ffffff;
 }
+
 form .login-btn:hover {
-  height: 60px;
+  height: 40px;
   background-color: #140e38ff;
   color: #6d60f6ff;
 }
 
 form .login-btn-option {
-  font-weight: 800;
-  height: 60px;
+  font-weight: 500;
+  height: 40px;
+  padding: 0 5px;
   color: #140e38ff;
   border: 1px solid #6d60f6ff;
 }
-form .login-btn-option:hover  {
-  font-weight: 800;
-  height: 60px;
+
+form .login-btn-option:hover {
   background-color: #6d60f6ff;
   color: #ffffff;
 }
@@ -60,22 +69,54 @@ form .login-btn-option:hover  {
   border-top: 2px solid #f0f0f0ff;
   border-radius: 20px;
   margin: auto;
-
   margin-top: 3rem;
-  width: 250px;
+  width: 50px;
   margin-bottom: 30px;
 }
 .tiny-line-text {
+  width: 100px;
   margin-top: 2.2rem;
   color: #646566;
 }
 
-.icons{
+.icons {
   font-size: 1.5rem;
+  margin: 0 4px;
 }
-.facebook{
-  color:#6d60f6ff ;
+
+.facebook {
+  color: #6d60f6ff;
 }
-form .login-btn-option:hover .facebook{
+
+form .login-btn-option:hover .facebook {
   color: #140e38ff;
+}
+
+@media screen and (max-width: 600px) {
+  .navContainer {
+    border: none;
+  }
+
+  div.form-container {
+    padding: 10px;
+  }
+
+  form .login-btn,
+  form .login-btn-option {
+    height: 50px;
+  }
+
+  div.tiny-line {
+    width: 200px;
+    border-radius: 0;
+  }
+
+  div.tiny-line-text {
+    width: 150px;
+    font-size: small;
+  }
+
+  div.sideImage {
+    height: 200px;
+  }
 }

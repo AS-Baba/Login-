@@ -6,8 +6,8 @@ import { PasswordForm } from "./PasswordForm";
 
 export const Form = () => {
   return (
-    <div className="container">
-      <form action="" className="form">
+    <div className="col container form-container ">
+      <form action="" className="form m-1">
         <div className="mb-3">
           <label className="form-label" htmlFor="email">
             Enter your email
@@ -27,10 +27,16 @@ export const Form = () => {
           </label>
           <PasswordForm />
         </div>
-        <button className="btn btn-block login-btn w-100"> Log In</button>
-        <OrLoginWith/>
-        <button className="btn  login-btn-option w-100 mb-3"><FcGoogle className="icons"/> Continue with google</button>
-        <button className="btn  login-btn-option w-100"><TfiFacebook className="icons facebook"/> Continue with facebook</button>
+        <div className="">
+          <button className="btn btn-block login-btn w-100"> Log In</button>
+          <OrLoginWith />
+          <button className="btn  login-btn-option w-100 mb-3">
+            <FcGoogle className="icons" />Continue with google
+          </button>
+          <button className="btn  login-btn-option w-100">
+            <TfiFacebook className="icons facebook" />Continue with facebook
+          </button>
+        </div>
       </form>
     </div>
   );

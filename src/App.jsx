@@ -1,13 +1,25 @@
-import { LoginPage } from "./Components/LoginPage"
-import Navbar from "./Components/Navbar"
+import { Form } from "./Components/Form";
+import { LoginHeader } from "./Components/LoginHeader";
+import Navbar from "./Components/Navbar";
+import { SideImage } from "./Components/SideImage";
 
 const App = () => {
   return (
     <>
-    <Navbar/>
-    <LoginPage/>
-    </>
-  )
-}
+      <Navbar />
+      <div className="row app">
+        <div className="col">
+          <LoginHeader />
+          <Form />
+        </div>
 
-export default App
+        <div className="col">
+          <SideImage/>
+
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default App;

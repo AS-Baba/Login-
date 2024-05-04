@@ -5,8 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 
 export default function NavbarController() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <div className="container">
+    <Navbar expand="lg" className="bg-body-tertiary navContainer">
+      <div className="container-fluid">
         <img className="brandLogo" src="/brand.svg" alt="" />
         <Navbar.Brand href="#">PayOnDelivery</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
