@@ -1,8 +1,33 @@
-# React + Vite
+# User Login
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The User Login allows users to login with their email and password
+(on a mobile viewport) in a drop-down menu, providing all links options.
 
-Currently, two official plugins are available:
+For a full list of the dependencies used in this module, check the package.json file.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Let me of bug reports and feature suggestions, or track changes.
+
+## Table of contents
+
+- Requirements
+- Recommended modules
+- Installation
+- Troubleshooting
+
+- ## Requirements
+
+This module requires node-module and all the dependencies listed in packege.json
+
+- ## Recomendation
+  I recomend using the same version of the dependencies as used in this project
+
+## Installation
+
+Use npm install as you would normally do to install node-module and all the dependencies.
+
+## Troubleshooting
+
+If the system does not run, check the following:
+
+- Are all the dependencies properly installed?
+- Is node-module installed?
