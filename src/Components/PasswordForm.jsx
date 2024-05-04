@@ -1,9 +1,17 @@
-import React from "react";
+import { useState } from "react";
+import { getFormValues } from "./getFormValues";
+
 export function PasswordForm() {
-  const [password, setPasswordValue] = React.useState("password");
-  const [passwordInput, setPasswordInput] = React.useState("");
-  const onPasswordChange = (e) => {
-    setPasswordInput(e.target.value);
+  const [password, setPasswordValue] = useState("password");
+
+  const handleSubmit =  (e) => {
+    e.preventDefault();
+    const { isEmpty, data } = getFormValues(e.currentTarget);
+    if (isEmpty) {
+      toastr.error("Provide all the values!");
+    } else {
+      e.currentTarget.reset();
+    }
   };
   const toggle = () => {
     if (password === "password") {
@@ -17,9 +25,8 @@ export function PasswordForm() {
       <div className="input-group">
         <input
           type={password}
-          onChange={onPasswordChange}
-          value={passwordInput}
-          placeholder="Enter password"
+          onSubmit={handleSubmit}
+          placeholder="Enter your password"
           name="password"
           className="form-control"
         />
