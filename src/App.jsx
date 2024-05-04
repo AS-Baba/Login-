@@ -1,4 +1,4 @@
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import toastr from "toastr";
 import "toastr/build/toastr.min.css";
 import { Form } from "./Components/Form";
@@ -36,8 +36,7 @@ const App = () => {
         </div>
 
         <div className="col">
-          <SideImage/>
-
+          <SideImage />
         </div>
       </div>
     </>

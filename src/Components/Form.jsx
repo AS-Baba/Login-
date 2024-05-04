@@ -1,5 +1,5 @@
+import "toastr/build/toastr.css";
 import toastr from "toastr";
-import "toastr/build/toastr.min.css";
 import { FcGoogle } from "react-icons/fc";
 import { TfiFacebook } from "react-icons/tfi";
 import { getFormValues } from "./getFormValues";
@@ -11,7 +11,7 @@ export const Form = () => {
     e.preventDefault();
     const { isEmpty, data } = getFormValues(e.currentTarget);
 
-    console.log(data)
+    console.log(data);
 
     if (isEmpty) {
       toastr.error("Provide all the values!");
@@ -40,7 +40,7 @@ export const Form = () => {
           <label className="form-label" htmlFor="email">
             Enter password
           </label>
-          <PasswordForm onSubmit ={handleSubmit}/>
+          <PasswordForm />
         </div>
         <div className="">
           <button className="btn btn-block login-btn w-100"> Log In</button>

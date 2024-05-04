@@ -3,8 +3,9 @@
   margin: 0 50px;
 }
 
-
-
+.brand-name {
+  font-weight: 700;
+}
 
 .brandLogo {
   width: 30px;
@@ -95,17 +96,24 @@ form .login-btn-option:hover .facebook {
   color: #140e38ff;
 }
 
+
+
+@media screen and (max-width: 810px) {
+  div.form-container {
+    padding: 35px;
+  }
+
+  .navContainer {
+    margin: 0 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navContainer {
     border: none;
     margin: 0;
   }
-    .navbarToggle {
-      outline: none;
-      border: none;
-      color: red;
-    }
-
+  
   div.form-container {
     padding: 10px;
   }
